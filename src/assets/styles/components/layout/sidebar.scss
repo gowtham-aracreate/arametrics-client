@@ -1,0 +1,67 @@
+.sidebar__container {
+    height: 100vh;
+    background-color: #FFFFFF;
+
+
+    .sidebar-root {
+        height: 100vh;
+        width: 300px;
+
+        .header {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                height: 40px;
+                width: 260px;
+            }
+        }
+
+        &__menu {
+            ul {
+                background-color: #fff;
+
+                li {
+                    position: relative;
+
+                    a {
+                        background-color: #fff;
+                        margin-left: 27px;
+                        width: 226px;
+                        height: 60px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 15px;
+                        transition: background-color 0.3s ease;
+                    }
+
+
+                    &.active {
+                        border-left: 6px solid $primary-color;
+
+                        a {
+                            background-color: $primary-color;
+                            color: #252525;
+                        }
+                    }
+
+                    &.active:hover {
+                        border-left: 6px solid $primary-color;
+
+                        a {
+                            background-color: $primary-color;
+                            color: #252525;
+                        }
+                    }
+
+                    &:hover a {
+                        background-color: lighten($primary-color, 20%);
+                    }
+                }
+            }
+        }
+    }
+}

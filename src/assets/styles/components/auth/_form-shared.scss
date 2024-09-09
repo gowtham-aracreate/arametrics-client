@@ -1,0 +1,126 @@
+// form-shared.scss
+.form-container {
+    margin: 0 auto;
+    color: #252525;
+    position: relative;
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 28px;
+    }
+
+    div {
+        margin-bottom: 28px;
+
+
+        label {
+            display: block;
+            margin-bottom: 9px;
+            font-size: 19px;
+            font-weight: 400;
+        }
+
+        input {
+            width: 100%;
+            height: 56px;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 400;
+            border: 1px solid #D4D7E3;
+            border-radius: 14px;
+
+        }
+
+        .eye-icon {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            // top: 0;
+            right: 16px;
+            margin-top: 16px;
+            cursor: pointer;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        p {
+            color: red;
+            margin: 5px 0 0;
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 56px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 14px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        cursor: pointer;
+        font-size: 23px;
+        font-weight: 400;
+
+        &:hover {
+            background-color: #020202;
+        }
+    }
+
+    .footer {
+        padding: 0 35px;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            font-weight: 400;
+            color: $secondary-color;
+
+            span {
+                height: 1px;
+                border: 1px solid $secondary-color;
+                width: 180px;
+            }
+        }
+
+        p {
+            color: #252525;
+        }
+
+        button {
+            margin-top: -34px;
+            background-color: #F3F9FA;
+            color: #313957;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+
+            span {
+                margin-top: 4px;
+            }
+
+            &:hover {
+                background-color: #494444;
+                color: #fff;
+            }
+        }
+
+    }
+
+}

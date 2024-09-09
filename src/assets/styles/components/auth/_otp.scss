@@ -1,0 +1,115 @@
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+        border: 3px solid rgb(230, 163, 163);
+        ;
+    }
+
+    10% {
+        transform: translateX(4px);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    35% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-4px);
+        border: 3px solid rgb(209, 21, 21);
+    }
+
+    60% {
+        transform: translateX(4px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+
+    90% {
+        transform: translateX(4px);
+    }
+
+    100% {
+        transform: translateX(0);
+        border: 3px solid rgb(230, 163, 163);
+
+    }
+}
+
+
+
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.otp-page {
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 14px;
+    }
+
+    p {
+        margin-bottom: 35px;
+        font-weight: 500;
+        font-size: 18px;
+
+        span {
+            margin-left: 5px;
+            color: #555555;
+            // text-decoration: underline;
+            font-size: 19px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.otp-input {
+    height: 78px;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 22px;
+    color: $secondary-color;
+    border: 1px solid #D4D7E3;
+    font-size: 78px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s;
+
+    &__error {
+        background-color: rgb(219, 205, 205);
+        border: 3px solid rgb(230, 163, 163);
+        animation: shake 0.7s;
+    }
+
+    &__success {
+        background-color: rgb(170, 204, 171);
+        border: 3px solid rgb(68, 164, 69);
+    }
+
+    // &:focus {
+    //     border-color: #007BFF;
+    // }
+}
+
+.otp-input-focus {
+    font-size: 50px;
+}

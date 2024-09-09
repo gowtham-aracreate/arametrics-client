@@ -1,0 +1,30 @@
+@import 'form-shared';
+
+.register-form {
+    @extend .form-container;
+
+    div:last-of-type {
+        label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            input[type="checkbox"] {
+                margin-right: 10px;
+                height: 25px;
+                width: 25px;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+
+                a {
+                    color: #555555;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}

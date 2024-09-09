@@ -1,0 +1,27 @@
+@import 'form-shared';
+
+.login-form {
+    @extend .form-container;
+
+    h1 {
+        margin-bottom: 18px !important;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 23px;
+        font-weight: 500;
+    }
+
+    .forgot_password {
+        color: $secondary-color;
+        margin-top: -5px !important;
+        margin-bottom: 15px;
+        font-size: 18px;
+        margin-left: 3px;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+}
